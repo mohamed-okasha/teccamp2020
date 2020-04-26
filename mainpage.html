@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new-photos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+          container {
+            position: absolute;
+            left: 10%;
+         }
+    </style>
+    <script>
+             function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    document.getElementById("imageUploading").setAttribute("src",e.target.result);
+                    document.getElementById("filechoser").style.display="none";
+                    document.getElementById("CP-btn").style.display="inline";
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="myprofile.html">myProfile</a></li>
+            <li><a href="mainpage.html">news</a></li>
+            <li><a href="frinds.html">Find frinds</a></li>
+            <li><a href="index.html">logout</a></li>
+        </ul>
+    </nav>
+    <div class="state">
+        <img id="imageUploading" src="add-image.png" alt="your image"  width="100px" />
+        <input type='file' onchange="readURL(this);" id="filechoser"  />
+        <span style="display: none;" id="CP-btn">
+             <button class="denger-btn btn">cansel</button>
+             <button class="btn primary-btn">post</button>
+        </span>
+       
+    </div>
+    <container class="container">
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+       </div>
+       <div class="gallery">
+        <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+        <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+       </div>
+       <div class="gallery">
+        <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+        <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+       </div>
+       <div class="gallery">
+        <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+        <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+        <div class="gallery">
+            <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+            <div class="desc">Add a description of the image here</div>
+            <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+       </div>
+       <div class="gallery">
+        <img class="galleryimg" src="img_5terre.jpg" alt="towen " width="600" height="400">
+        <div class="desc">Add a description of the image here</div>
+        <div class="prophile"><img  src="cat.jpg" >esra shaafi </div><span class="like"><a>Like</a></span>
+        </div>
+
+    </container>
+    
+    
+</body>
+</html>

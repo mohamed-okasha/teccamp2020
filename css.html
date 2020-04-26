@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>css</title>
+  </head>
+  <body>
+    <div class="content">
+        <img id="cssLogo" src="cssLogo.png">
+      <h2 class="contentTitleCss">1. Inline CSS</h2>
+      <p>
+        First off, we can include CSS directly in our HTML elements. For this,
+        we make use of the style attribute and then we provide properties to it.
+      </p>
+
+      <div class="CSSexample">
+        &lt;h1 style="color: blue"> Hello world! &lt;/h1>
+      </div>
+
+      <p>
+        Here we’re giving it the property of color, and setting the value to
+        blue.
+      </p>
+
+      <hr />
+
+      <h2 class="contentTitleCss">2. Internal CSS</h2>
+      <p>
+        The other way to include CSS is using the style element in the head
+        section of the HTML document. This is called internal styling.
+      </p>
+
+      <div class="CSSexample">
+        &lt;head> &lt;style> h1 { color: blue; } &lt;/style> &lt;/head>
+      </div>
+
+      <p>
+        In the style element, we can give the styling to our HTML elements by
+        selecting the element(s) and provide styling attributes. Just like we
+        applied thecolorproperty to the h1 element above.
+      </p>
+
+      <hr />
+
+      <h2 class="contentTitleCss">3. External CSS</h2>
+      <p>
+        The third and most recommended way to include CSS is using an external
+        stylesheet. We create a stylesheet with a .css extension and include its
+        link in the HTML document, like this:
+      </p>
+
+      <div class="CSSexample">
+        &lt;head> &lt;link rel="stylesheet" href="style.css"> &lt;/head>
+      </div>
+
+      <p>
+        In the code above, we have included the link of style.css file using the
+        link element. We then write all of our CSS in a separate stylesheet
+        called style.css so that it’s easily manageable.
+      </p>
+
+      <div class="CSSexample">
+        h1 { color: blue; }
+      </div>
+      <p>
+        This stylesheet can also be imported into other HTML files, so this is
+        great for reusability.
+      </p>
+      <hr />
+
+      <h2 class="contentTitleCss">CSS Selectors</h2>
+      <p>
+        As we discussed earlier, CSS is a design language which is used to style
+        HTML elements. And in order to style elements, you first have to select
+        them. You’ve already seen a glimpse of how this works, but let’s dive a
+        bit deeper into CSS selectors, and look at three different ways you can
+        select HTML elements.
+      </p>
+      <h2 class="contentTitleCss">1. Element</h2>
+      <p>
+        The first way to select an HTML element is by simply using the name,
+        which is what we did above. Let’s see how it works:
+      </p>
+      <div class="CSSexample">
+        h1 { font-size: 20px; } p { color: green; } div { margin: 10px; }
+      </div>
+      <p>
+        The example above is almost self-explanatory. We are selecting different
+        elements like h1, p, div and giving them different style attributes. The
+        font-size controls the size of the text, color sets the text color, and
+        margin adds spacing around the element.
+      </p>
+      <hr />
+      <h2 class="contentTitleCss">2. Class</h2>
+      <p>
+        Another way of selecting HTML elements is by using the class attribute.
+        In HTML, we can assign different classes to our elements. Each element
+        can have multiple classes, and each class can also be applied to
+        multiple elements as well.<br />
+        Let’s see it in action:
+      </p>
+      <div class="CSSexample">
+        &lt;div class='container'> &lt;h1> This is heading &lt;/h1> &lt;/div>
+      </div>
+      <div class="CSSexample">
+        .container { margin: 10px; }
+      </div>
+      <p>
+        In the code above, we have assigned the class of container to the div
+        element. In the stylesheet, we select our class using .className format
+        and giving it a 10px margin.
+      </p>
+      <h2 class="contentTitleCss">2. ID</h2>
+      <p>
+        Like classes, we can also use IDs to select HTML elements and apply
+        styling to them. The only difference between class and ID is that one ID
+        can be assigned to only one HTML element.
+      </p>
+      <div class="CSSexample">
+        &lt;div> &lt;p id='para1'> This is a paragraph &lt;/p> &lt;/div>
+      </div>
+      <div class="CSSexample">
+        #para1 { color: green; font-size: 16px; }
+      </div>
+      <p>
+        The example above displays how we assign an ID to the paragraph element
+        and later use the ID selector in the stylesheet to select the paragraph
+        and apply the style to it.
+      </p>
+    </div>
+  </body>
+</html>

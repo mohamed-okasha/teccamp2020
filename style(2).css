@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    padding: 125px;
+    background-color: #5bd0f4a1;
+    text-align: center;
+    font-size: 55px;
+    font-family: monospace;
+    border-bottom:1px solid black; 
+    border-bottom-color: black;
+}
+
+.course {
+    position: relative;
+    padding: 25px;
+    background-color: #5bd0f4a1;
+    text-align: right;
+    font-size: 35px;
+    font-family: monospace;
+    border-bottom:1px solid black; 
+    border-bottom-color: black;
+}
+
+
+.home {
+    left: 140px;
+    position: absolute;
+    top: 15px;
+    border-bottom-style: groove;
+    border-bottom-style:ridge;
+    border-bottom-width: thin;
+    font-size: 30px;
+    color: black;
+}
+
+#hom {
+    left: 140px;
+    position: absolute;
+    top: 15px;
+    border-bottom-style: groove;
+    border-bottom-style:ridge;
+    border-bottom-width: thin;
+    font-size: 20px;
+    color: black;
+    
+}
+
+#about {
+    left: 220px;
+    position: absolute;
+    top: 15px;
+    border-bottom-style:ridge;
+    border-bottom-width: thin;
+    border-bottom-color: darkslateblue;
+    font-size: 20px;
+    color: black;
+}
+
+
+#author {
+    position: absolute;
+    right: 60px; 
+    top: 290px;
+}
+
+#into {
+    position: absolute;
+    top: 190px;
+    right: 38%;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.modify {
+    clear: both;
+}
+.era {
+    width: 50%;
+    position: absolute;
+    top: 220px;
+    left: 25%;
+    font: 20px normal sans-serif;
+    background-color: #fdfdfd;
+    padding-right: 0px;
+    box-shadow: 4px 4px 4px 4px #9dd5db;
+}
+
+#p1 {
+    height: 1170px;
+}
+
+#p2 {
+    height: 900px;
+}
+
+#p3 {
+    height: 1720px;   
+}
+
+#p4 {
+    height: 1420px;
+}
+
+.era article {
+    margin: 30px;
+    padding: 5px;
+    padding-right: 5px;
+    margin-bottom: 50px;
+}
+
+.era article p,ul {
+    padding: 15px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #c1e3e0;
+}
+
+figure {
+    padding: 25px;
+}
+
+figure figcaption {
+    font: 15px solid serif;
+}
+
+.ans {
+    font: 25px solid monospace;
+}
+
+label {
+    padding: 10px;
+    margin: 30px;
+    
+}
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc; 
+    cursor:pointer;
+    border-radius: 5px; 
+    margin-left: 15px;
+}
+
+footer {
+    background-color: #5bd0f4a1;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    position:fixed;
+    right: 0;bottom:0;left:0;
+    font-family: monospace;
+    }
+
+.link {
+    border-bottom: 1px ridge black;
+}
