@@ -1,0 +1,150 @@
+
+#header {
+  background-color: rgb(167, 224, 238); 
+  padding: 24px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.maintitle{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+.maintitlered{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: rgba(207, 47, 47, 0.884);
+}
+.maintitlegreen{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: rgba(49, 107, 41, 0.897);
+}
+.navitem{
+    font-size: 28px;
+    margin-left: 100px;
+    margin-right: 80px;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+}
+.navitem:link{
+    color: black   ;
+}
+.navitem:visited{
+    color: rgb(70, 52, 151);
+}
+.navitem:hover{
+    color: lightcoral;
+}
+.navitem:active{
+    color: blue;
+
+}
+#main {
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#clothes{
+    padding-top: 5px  ;
+}
+.clothes{
+    margin-left: 13px;
+    }
+.coverimg {
+        margin-left: 6px;
+    }
+img {
+    margin-top:0px; 
+    width: ‭1440‬‬px;
+    height:508px;
+}
+#footer{
+    background-color: rgb(76, 235, 155);
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.aboutimg {
+    margin-left: 6px;
+}
+#table {
+    padding: 25px;
+}
+.table{ font-family: 'Exo 2', sans-serif;
+font-size: 24px;
+
+text-align-last: auto;
+}
+td {
+    padding: 8px;
+}
+.firstcol   {
+    font-weight: 600;
+    color: rgb(10, 50, 110);
+}
+
+.contactimg {
+    margin-left: 6px;
+}
+
+.contactheader   {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(10, 50, 110);
+    
+}
+.formstyle {
+    margin: 0;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+#contacttext { 
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(10, 50, 110);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+   
+ }
+ .wholeform {
+     padding: 10px;
+     margin-left: 450px;
+     margin-right: auto;
+  
+ }
+
+ .label {
+     width: 40%;
+     
+ }
+ #maincontact {
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+ }
+
+ #mainshop {
+    background-color: lightgray;
+    padding: 1px;
+    margin-left: 250px;
+    margin-right: 250px;
+
+ }
+ .clothes1 {
+    margin-left: 3px;
+    align-items: center;
+    }

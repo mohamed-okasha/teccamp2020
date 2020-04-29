@@ -1,0 +1,55 @@
+#header {
+  background-color: rgb(167, 224, 238); 
+  padding: 24px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.maintitle{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+.maintitlered{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: rgba(207, 47, 47, 0.884);
+}
+.maintitlegreen{
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Exo 2', sans-serif;
+    color: rgba(49, 107, 41, 0.897);
+}
+.navitem{
+    font-size: 28px;
+    margin-left: 100px;
+    margin-right: 80px;
+    font-family: 'Exo 2', sans-serif;
+}
+#main {
+    background-color: lightgray;
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#clothes{
+    padding-top: 5px  ;
+}
+.clothes{
+    margin-left: 13px;
+    }
+
+img {
+    margin-top:0px; 
+    width: ‭1440‬‬px;
+    height:508px;
+}
+#footer{
+    background-color: rgb(76, 235, 155);
+    padding: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
