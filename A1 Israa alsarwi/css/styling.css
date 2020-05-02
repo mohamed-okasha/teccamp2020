@@ -1,0 +1,166 @@
+h1 {
+  text-align: center;
+  font-size: 44px;
+  letter-spacing: 4px;
+}
+
+body {
+  margin: 0px;
+}
+
+#menu {
+  list-style: none;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+a.items {
+  color: gainsboro;
+  text-align: center;
+  align-content: center;
+  display: inline;
+  margin: 0px 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Arial", "Helvetica", "sans-serif";
+  font-weight: 400;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li.active a {
+  color: burlywood;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: antiquewhite;
+}
+
+.subTitle {
+  font-family: sans-serif;
+  font-size: 34px;
+  color: burlywood;
+}
+
+p.art {
+  line-height: 1.8em;
+  font-family: sans-serif;
+  font-size: 21px;
+  text-justify: auto;
+  text-overflow: clip;
+  color: #443208;
+}
+
+.article {
+  margin: 50px;
+
+}
+
+.img {
+  margin-left: 400px;
+  width: 400px;
+  display: block;
+}
+
+
+p.num {
+  color: darkkhaki;
+  font-family: sans-serif;
+  font-size: 34px;
+  float: left;
+  margin-right: 900px;
+}
+
+.tips {
+  display: block;
+}
+
+.tipDis {
+  font-family: sans-serif;
+  font-size: 22px;
+  float: left;
+  text-align: left;
+  clear: both;
+  line-height: 1.8em;
+
+}
+
+.title {
+  font-size: 44px;
+  text-align: center;
+  margin: 0px;
+  align-content: center;
+  margin-top: 40px;
+}
+
+.input {
+  width: 400px;
+  height: 50px;
+  font-family: sans-serif;
+  font-size: 22px;
+
+}
+
+.image {
+  float: right;
+  width: 620px;
+  margin-right: 100px;
+  margin-top: 90px;
+}
+
+.cover {
+  width: 100%;
+  align-items: center;
+  background-color: beige;
+  align-content: center;
+
+}
+
+button {
+  height: 45px;
+  width: 80px;
+  border: none;
+  padding: 15px 12px;
+  font-size: 18px;
+  background-color: burlywood;
+  color: white;
+  margin-left: 325px;
+}
+
+.backHome {
+  height: 45px;
+  width: 200px;
+  border: none;
+  padding: 15px 12px;
+  font-size: 18px;
+  background-color: burlywood;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 350px;
+}
+
+.email {
+  margin-left: 100px;
+  float: left;
+}
+
+footer {
+  margin: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: gray;
+  color: antiquewhite;
+  font-family: sans-serif;
+  padding-top: 100px;
+}
