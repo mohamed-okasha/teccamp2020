@@ -1,0 +1,101 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div a{
+  text-decoration: none;
+}
+
+a:hover {
+	background-color: #c4c4c4;
+}
+
+li {
+  float: left;
+}
+
+#imgtag{
+	text-align: center;
+}
+
+.cell {
+	margin-left: 120px;
+	padding: 5px;
+	width: 20%;
+	float: left;
+}
+
+.card {
+	cursor: pointer;
+	height: 300px;
+	padding: 5px;
+	background-color: #c4c4c4;
+	border-radius: 5px;
+}
+
+.imgcard{
+	width: 250px;
+	height: 200px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.paper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.container {
+  padding: 16px;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+
