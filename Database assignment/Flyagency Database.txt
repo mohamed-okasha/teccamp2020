@@ -1,0 +1,30 @@
+CREATE TABLE customers(
+    Customer_Id int NOT null,
+    Customer_Name varchar(100),
+    Email varchar(320),
+    Phone_Number int NOT null,
+    PRIMARY KEY (Customer_Name)
+);
+
+INSERT INTO customers VALUES (111, 'Ali', 'ali@gmail.com', 910000000), 
+(112, 'Mohamed','mohamed@gmail.com', 920000000),
+(113, 'Aisha', 'aisha@gmail.com', 940000000),
+(114, 'Salem', 'salem@gmail.com', 950000000);
+
+CREATE TABLE Tickets(
+    Customer varchar(320),
+    Traveller_Name varchar(320),
+    Ticket_Number int(20),
+    Traveling_from varchar(320),
+    Traveling_to varchar(320),
+    Travel_Date date,
+    Price FLOAT NOT NULL,
+    FOREIGN KEY (Customer) REFERENCES customers(Customer_Name)
+);
+
+INSERT INTO Tickets VALUES ('Ali', 'Ali', 1282544541, 'TIP',	'IST',	2020-3-4, 800),
+('Ali', 'Esra', 1282544541, 'TIP',	'IST',	2020-3-4, 800),
+('Aisha', 'Aisha', 1282549991, 'HBE',	'TUN',	2020-5-28, 1250),
+('Salem', 'Salem', 1282551512, 'BEN',	'CAI',	2020-4-12, 650);
+
+SELECT customers.Customer_Name, tickets.Traveller_Name, tickets.Price from customers JOIN tickets ON tickets.Customer = customers.Customer_Name;
