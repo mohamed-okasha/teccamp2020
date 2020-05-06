@@ -1,0 +1,34 @@
+Pls, Enter ur Name :Snow White
+whats ur Grade in %65
+ Name of Student :  Snow White     Grade is 65 %     Rate : Good
+Pls, Enter ur Name :Cindrella
+whats ur Grade in %88
+ Name of Student :  Cindrella     Grade is 88 %   Rate : Excellent
+Pls, Enter ur Name :Aurora
+whats ur Grade in %73
+ Name of Student :  Aurora     Grade is 73 %   Rate : Very-good
+Pls, Enter ur Name :Ariel
+whats ur Grade in %77
+ Name of Student :  Ariel     Grade is 77 %   Rate : Very-good
+Pls, Enter ur Name :Bell
+whats ur Grade in %99
+ Name of Student :  Bell     Grade is 99 %   Rate : Excellent
+Pls, Enter ur Name :Jasmine
+whats ur Grade in %91
+ Name of Student :  Jasmine     Grade is 91 %   Rate : Excellent
+Pls, Enter ur Name :Pochotas
+whats ur Grade in %35
+ Name of Student :  Pochotas     Grade is 35 %   Rate : Maybe naext time       
+Pls, Enter ur Name :Mulan
+whats ur Grade in %94
+ Name of Student :  Mulan     Grade is 94 %   Rate : Excellent
+Pls, Enter ur Name :Tiana
+whats ur Grade in %54
+ Name of Student :  Tiana     Grade is 54 %     Rate : Good
+Pls, Enter ur Name :Rapunzel
+whats ur Grade in %42
+ Name of Student :  Rapunzel     Grade is 42 %   Rate : Maybe naext time       
+Pls, Enter ur Name :Merida
+whats ur Grade in %-2
+Unkown Result
+We Done

@@ -1,0 +1,62 @@
+CREATE TABLE customers(
+    Customer_Id int NOT null,
+    Customer_Name text,
+    Email varchar(320),
+    PRIMARY KEY (Customer_Id)
+);
+
+INSERT INTO `customers` VALUES 
+(1, 'Ali', 'ali@gmail.com'),
+(2, 'Hani', 'Hani@gmail.com'), 
+(3, 'Mohamed','mohamed@gmail.com'),
+(4, 'Aisha', 'aisha@gmail.com'),
+(5, 'Salem', 'salem@gmail.com');
+
+SELECT *
+FROM customers;
+                                
+CREATE TABLE courses(
+    Course_Id int NOT null,
+    Course_Name text,
+    PRIMARY KEY (Course_Id)
+);
+
+INSERT INTO courses VALUES (1, 'Math'),
+(2, 'Design'),
+(3, 'English'),
+(4, 'Art'),
+(5, 'Physics');
+
+SELECT *
+FROM courses;
+
+CREATE TABLE custcourses(
+    Id int,
+    Customer_Id int,
+    Course_Id int,
+    PRIMARY KEY (Id),
+    FOREIGN KEY (Customer_Id) REFERENCES customers(Customer_Id),
+    FOREIGN KEY (Course_Id) REFERENCES courses(Course_Id)
+);
+
+INSERT INTO `custcourses`(`Id`, `Customer_Id`, `Course_Id`) VALUES (1,	1,	1),
+(2,	1,	2),
+(3,	2,	4),
+(4,	3,	5),
+(5,	4,	2),
+(6,	4,	3),
+(7,	5,	3);
+
+SELECT *
+FROM customers
+JOIN custcourses
+on customers.Customer_Id = custcourses.Customer_Id
+JOIN courses
+ON custcourses.Course_Id = courses.Course_Id;
+
+SELECT customers.Customer_Name, courses.Course_Name
+FROM customers
+JOIN custcourses
+on customers.Customer_Id = custcourses.Customer_Id
+JOIN courses
+ON custcourses.Course_Id = courses.Course_Id;

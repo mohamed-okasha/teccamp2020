@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-6">
+        <ol>
+            {% for todo in todo_list %}
+            
+            <li>
+            <div class="alert alert-primary" role="alert">
+                {{todo.title}} - {{todo.category.name}} {{todo.due_date}}
+            </div>
+                
+            </li>
+            {% endfor %}
+        </ol>
+
+    </div>
+    <div class="col-6">
+        <form action='' method="POST">
+
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="titleInput1">Title</label>
+                <input type="text" class="form-control" name='title' id="titleInput1" placeholder="Enter Title">
+            </div>
+            <div class="form-group">
+                <label for="content">Example textarea</label>
+                <textarea class="form-control" name='content' id="content" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="selected_category_id">Select Category</label>
+                <select class="form-control" name="selected_category" id="selected_category_id">
+{% for cat  in categories %}
+        <option value="{{cat.id}}">
+            {{cat.name}}
+        </option>
+    {% endfor %}
+</select>
+            </div>
+
+            <input class="form-control" type="date" name="due_date">
+            <button type="submit" name="save" class="btn btn-primary">Save</button>
+            <button type="submit" name="delete" class="btn btn-danger">Delete</button>
+        </form>
+
+    </div>
+</div>
+{% endblock content %}
