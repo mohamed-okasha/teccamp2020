@@ -45,6 +45,16 @@
 
             <input class="form-control" type="date" name="due_date">
             <button type="submit" name="save" class="btn btn-primary">Save</button>
+            
+        </form>
+
+        <form action='' method="POST">
+            {% csrf_token %}
+            {% for val in todo_list %}
+
+            <input type="radio" name="val" value="{{val.id}}">{{val.title}}  </br>
+
+            {% endfor %}
             <button type="submit" name="delete" class="btn btn-danger">Delete</button>
         </form>
 
