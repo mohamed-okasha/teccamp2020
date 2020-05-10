@@ -19,7 +19,7 @@ from blog_app.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('blog/', include('blog_app.urls')),
-    path('', home, name='home')
-
+    path('', home, name='home'),
 ]
