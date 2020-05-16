@@ -1,27 +1,22 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
-
+<h1 style="background-color:gainsboro ; padding:15px ; border-radius:6px; margin:10px;">{{title}} </h1>
 <div class="row">
-
     <div class="col-6">
-        <ol>
-            {% for todo in todo_list %}
-            
+        <ul>
+            {% for todo in todo %}
             <li>
             <div class="alert alert-primary" role="alert">
-                {{todo.title}} - {{todo.category.name}} {{todo.due_date}}
+                  {{todo.id}} - {{todo.title}} - {{todo.category.name}} - {{todo.due_date}}
             </div>
-                
             </li>
             {% endfor %}
-        </ol>
-
+        </ul>
     </div>
-    <div class="col-6">
+    
+       <div class="col-6">
         <form action='' method="POST">
-
             {% csrf_token %}
             <div class="form-group">
                 <label for="titleInput1">Title</label>
@@ -35,19 +30,33 @@
             <div class="form-group">
                 <label for="selected_category_id">Select Category</label>
                 <select class="form-control" name="selected_category" id="selected_category_id">
-{% for cat  in categories %}
-        <option value="{{cat.id}}">
+            {% for cat  in catego %}
+            <option value="{{cat.id}}">
             {{cat.name}}
-        </option>
-    {% endfor %}
-</select>
+            </option>
+               {% endfor %}
+            </select>
             </div>
-
-            <input class="form-control" type="date" name="due_date">
+            <input class="form-control" type="date" name="due_date" value="{{due_date}}">
             <button type="submit" name="save" class="btn btn-primary">Save</button>
-            <button type="submit" name="delete" class="btn btn-danger">Delete</button>
         </form>
-
     </div>
+
+    {% for todo in todo %}
+        <form action="" method="POST">
+        {% csrf_token %}
+        <input type="radio" name="title" id="title" value="{{todo.id}}">
+        <label for="title">{{todo.title}}</label> 
+        {% endfor %}
+        <button type="submit" name="delete" class="btn btn-warning">Delete</button>
+    </form>
+    <br><br>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <strong>Search the task you want</strong>
+        <input type="search" name="title">
+    </form>
+
 </div>
 {% endblock content %}
